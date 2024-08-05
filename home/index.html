@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CH444NDNI</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="fisheye.js"></script>
+
+    <style>
+      @font-face {
+        font-family: torch;
+        src: url("assets/headster.ttf");
+      }
+      h1 {
+        font-family: torch;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">Works</a>
+      <a href="#contact">About</a>
+      <!-- <a href="#about">About</a> -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <!-- <h1>Responsive Image Grid</h1> -->
+      <!-- <p>Resize the browser window to see the responsive effect.</p> -->
+    </div>
+
+    <!-- <div class="fisheye-overlay"> -->
+    <div id="title">
+      <h1>Chandni</h1>
+      <div id="descripton-container">
+        <a class="description" href="#works">
+          PHOTOGRAPHER. CINEMATOGRAPHER. DJ. DIRECTOR. ROCKSTAR. <br />
+          <span>VIEW ALL WORKS HERE</span></a
+        >
+      </div>
+    </div>
+
+    <!-- </div> -->
+
+    <!-- Photo Grid -->
+    <a href="#work">
+      <div class="row">
+        <div class="column">
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/amy.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/animatic.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/bahan.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/breakthrough.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/dearadel.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="column">
+          <img src="assets/photo/2017.png" style="width: 100%" />
+          <img src="assets/photo/amess.png" style="width: 100%" />
+          <img src="assets/photo/canalaisha.jpg" style="width: 100%" />
+          <img src="assets/photo/extragrrlsalex.tif" style="width: 100%" />
+          <img src="assets/photo/extragrrlschan.png" style="width: 100%" />
+          <img src="assets/photo/extragrrlsheji.png" style="width: 100%" />
+          <img src="assets/photo/kost.jpg" style="width: 100%" />
+          <img src="assets/photo/realityclub.JPG" style="width: 100%" />
+        </div>
+        <div class="column">
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/extragrrls.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/flux.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/inmyroom.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/realityclub.mp4" type="video/mp4" />
+          </video>
+          <video
+            autoplay=""
+            muted=""
+            loop=""
+            playsinline=""
+            style="width: 100%"
+            controls
+          >
+            <source src="assets/video/saf.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="column">
+          <img src="assets/photo/fisheye.jpg" style="width: 100%" />
+          <img src="assets/photo/freepalestine.jpg" style="width: 100%" />
+          <img src="assets/photo/ken.jpg" style="width: 100%" />
+          <img src="assets/photo/kidquest1.jpg" style="width: 100%" />
+          <img src="assets/photo/kirti.JPG" style="width: 100%" />
+          <img src="assets/photo/motherdaughter1.png" style="width: 100%" />
+          <img src="assets/photo/motherdaughter2.jpg" style="width: 100%" />
+        </div>
+      </div>
+    </a>
+
+    <!-- <script>
+      document.addEventListener("mousemove", function (event) {
+        const { clientX, clientY } = event;
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+        const maxDistortion = 100; // Adjust distortion strength as needed
+
+        const dx = clientX - centerX;
+        const dy = clientY - centerY;
+
+        const scaleX = 1 + ((dx / centerX) * maxDistortion) / 100;
+        const scaleY = 1 + ((dy / centerY) * maxDistortion) / 100;
+
+        const transformValue = `scale(${scaleX}, ${scaleY})`;
+
+        document.querySelector(".fisheye-overlay").style.transform =
+          transformValue;
+      });
+
+      // <script type="text/javascript" src="check.js">
+    </script> -->
+
+    <script src="bundle2.js"></script>
+    <!-- <script src="main.js" async defer></script>
+    <script src="cursor.js"></script> -->
+  </body>
+</html>

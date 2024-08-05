@@ -1,0 +1,126 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: monospace;
+}
+
+body {
+  background: black !important;
+}
+
+.row > * {
+  width: auto !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 -10px; Counteract column margins */
+  margin: 0 -10px; /* Counteract column margins */
+}
+
+body .container {
+  /* max-width: 1100px; */
+}
+
+.container {
+  /* margin: 0 0;
+  max-width: 0; */
+
+  margin: 0 auto;
+  /* max-width: 1100px; Or whatever width suits your design */
+
+  display: flex; /* Arrange columns side by side */
+  flex-wrap: wrap; /* Allow wrapping of columns if necessary */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px; /* Space between columns */
+  box-sizing: border-box;
+  height: 85vh;
+  /* min-height: 50vh; */
+  overflow: scroll;
+}
+
+.column-inside {
+  height: 800px;
+}
+
+.column:last-child {
+  margin-right: 0; /* Remove margin for the last column */
+}
+
+.card {
+  margin-bottom: 10px; /* Space between cards */
+}
+
+#filter-buttons button {
+  /* border-radius: 3px; */
+  /* background: #fff; */
+  color: white;
+
+  font-size: 1.4em;
+  border-color: transparent;
+  /* font-family: torch; */
+}
+
+#filter-buttons button:hover {
+  color: white;
+  /* background: #ddd; */
+  /* font-family: torch; */
+  text-decoration: underline dotted #f83b8a;
+}
+
+#filter-buttons button.active {
+  color: #f83b8a;
+  /* background: #6c757d; */
+  /* font-family: torch; */
+  /* text-decoration: underline dotted #f83b8a; */
+}
+
+#filterable-cards .card {
+  /* width: 11rem; */
+  width: 13rem;
+  /* border: 2px solid transparent; */
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+.card-body {
+  background-color: black;
+  /* padding: 0.5em; */
+  padding: 0 !important;
+}
+
+.card-title {
+  color: white !important;
+  /* color: #f83b8a !important; */
+  font-size: 0.8em;
+}
+
+.card-text {
+  color: white !important;
+  /* color: #f83b8a !important; */
+  font-size: 0.7em;
+  margin-top: -7px;
+  margin-bottom: 1em;
+}
+
+.card {
+  --bs-card-bg: none !important;
+}
