@@ -12,7 +12,7 @@ body {
 }
 
 .row > * {
-  /* width: auto !important; */
+  width: auto !important;
 }
 
 .row {
@@ -29,7 +29,10 @@ body .container {
 }
 
 .column {
+  height: 95vh !important;
   display: flex;
+  flex: 1; /* Allow columns to grow equally */
+
   /* flex-direction: column; */
   margin-right: 10px; /* Space between columns */
   box-sizing: border-box;
@@ -98,7 +101,7 @@ body .container {
 }
 
 #filterable-cards .card {
-  width: 13rem;
+  /* width: 15rem; */
   border: 1px dotted #f83b8a;
   padding: 2em 3px !important;
 }
@@ -238,17 +241,25 @@ img {
 
 /* Styles for different screen sizes */
 @media (max-width: 1200px) {
-  .card-container {
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  /* .card-container {
+    flex-wrap: wrap;
   }
   .column {
-    flex: 0 0 25%; /* 4 columns for medium screens */
+    flex: 0 0 25%;
+  } */
+  #filterable-cards .card {
+    width: auto;
+    padding: none;
   }
 }
 
 @media (max-width: 900px) {
-  .column {
-    flex: 0 0 33.33%; /* 3 columns for smaller screens */
+  /* .column {
+    flex: 0 0 33.33%;
+  } */
+  #filterable-cards .card {
+    width: auto;
+    padding: none;
   }
 }
 
@@ -260,4 +271,10 @@ img {
     width: auto;
     padding: none;
   }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.7rem;
 }
