@@ -25,7 +25,7 @@ body .container {
   margin: 0 auto;
   display: flex; /* Arrange columns side by side */
   flex-wrap: wrap; /* Allow wrapping of columns if necessary */
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 .column {
@@ -107,7 +107,7 @@ body .container {
   display: none;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   #filterable-cards {
     justify-content: center;
   }
@@ -115,7 +115,7 @@ body .container {
   #filterable-cards .card {
     width: calc(100% / 2 - 10px);
   }
-}
+} */
 
 .card-body {
   background-color: black;
@@ -220,7 +220,44 @@ img {
 }
 
 .card-container {
-  left: 50%;
-  right: 50%;
+  /* left: 50%;
+  right: 50%; */
   /* transform: translateX(-50%); */
+  display: flex; /* Align columns in a single row */
+  flex-wrap: wrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  /* justify-content: space-between; */
+  /* margin-left: 50%; */
+  /* margin-right: 50%; */
+  /* transform: translateX(-50%); */
+  /* position: absolute; */
+  /* background-color: red; */
+  justify-content: center; /* Center the items horizontally */
+  margin: 0 auto; /* Center the container itself */
+}
+
+/* Styles for different screen sizes */
+@media (max-width: 1200px) {
+  .card-container {
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  .column {
+    flex: 0 0 25%; /* 4 columns for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .column {
+    flex: 0 0 33.33%; /* 3 columns for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    /* flex: 0 0 50%; */
+  }
+  #filterable-cards .card {
+    width: auto;
+    padding: none;
+  }
 }

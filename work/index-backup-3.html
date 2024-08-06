@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>CH444NDNI's PORTFOLIO</title>
-    <link rel="stylesheet" href="style-test2.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -1106,60 +1106,37 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const filterButtons = document.querySelectorAll(
-          "#filter-buttons button"
-        );
-        const cardContainer = document.querySelector(".card-container");
-        const cards = Array.from(cardContainer.querySelectorAll(".card"));
+        const container = document.getElementById("filterable-cards");
+        const cards = Array.from(container.querySelectorAll(".card"));
+        const maxCardsPerColumn = 6; // Maximum number of cards per column
 
-        // Create 6 column divs with a column-inside div inside each
-        const numColumns = 6;
-        const columns = [];
+        // Calculate the number of columns needed
+        const numColumns = Math.ceil(cards.length / maxCardsPerColumn);
 
-        // Clear existing cards from card-container
-        cardContainer.innerHTML = "";
-
+        // Create column divs with column-inside divs
+        const columnDivs = [];
         for (let i = 0; i < numColumns; i++) {
-          const column = document.createElement("div");
-          column.classList.add("column");
+          const columnDiv = document.createElement("div");
+          columnDiv.className = "column";
 
-          const columnInside = document.createElement("div");
-          columnInside.classList.add("column-inside");
+          const columnInsideDiv = document.createElement("div");
+          columnInsideDiv.className = "column-inside";
 
-          column.appendChild(columnInside);
-          columns.push(column);
-          cardContainer.appendChild(column);
+          columnDiv.appendChild(columnInsideDiv);
+          columnDivs.push(columnInsideDiv); // Push column-inside to array
         }
 
-        // Distribute cards evenly among the columns
+        // Distribute cards into column-inside divs
         cards.forEach((card, index) => {
-          const columnIndex = index % numColumns;
-          columns[columnIndex]
-            .querySelector(".column-inside")
-            .appendChild(card);
+          const columnIndex = Math.floor(index / maxCardsPerColumn);
+          columnDivs[columnIndex].appendChild(card);
         });
 
-        // Filter functionality
-        filterButtons.forEach((button) => {
-          button.addEventListener("click", () => {
-            const filter = button.getAttribute("data-filter");
-
-            // Remove 'active' class from all buttons
-            filterButtons.forEach((btn) => btn.classList.remove("active"));
-            button.classList.add("active");
-
-            // Show or hide cards based on the selected filter
-            cards.forEach((card) => {
-              if (
-                filter === "all" ||
-                card.getAttribute("data-name") === filter
-              ) {
-                card.style.display = ""; // Show the card
-              } else {
-                card.style.display = "none"; // Hide the card
-              }
-            });
-          });
+        // Clear the container and append columns
+        container.innerHTML = "";
+        columnDivs.forEach((columnInsideDiv) => {
+          const columnDiv = columnInsideDiv.parentElement;
+          container.appendChild(columnDiv);
         });
       });
     </script>
