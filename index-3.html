@@ -20,7 +20,7 @@
       .column video,
       .column iframe {
         transition: transform 0.2s ease; /* Smooth transition for transform */
-        transform: scale(0.7);
+        transform-origin: center; /* Set transform origin */
       }
     </style>
   </head>
@@ -337,12 +337,12 @@
       // Function to handle mouse movement and apply parallax effect
       document.addEventListener("mousemove", function (event) {
         const images = document.querySelectorAll(
-          ".column img, .column video,.column iframe"
+          ".column img, .column video, .column iframe"
         );
         images.forEach((image) => {
           const rect = image.getBoundingClientRect();
-          const imageX = rect.left + rect.width / 2;
-          const imageY = rect.top + rect.height / 2;
+          const imageX = rect.left + rect.width / 10;
+          const imageY = rect.top + rect.height / 10;
 
           // Calculate the difference between mouse and image position
           const deltaX = event.clientX - imageX;
@@ -357,11 +357,13 @@
             y: translateY,
             duration: 0.2,
             ease: "power1.out",
+            // scale: 0.8
+            , // Slightly increase the size
           });
         });
       });
     </script>
 
-    <script src="bundle2.js"></script>
+    <!-- <script src="bundle2.js"></script> -->
   </body>
 </html>

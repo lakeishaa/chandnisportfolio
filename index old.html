@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>fmelel</title>
+    <title>CH444NDNI</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="fisheye.js"></script>
+
     <style>
       @font-face {
         font-family: torch;
@@ -16,12 +18,6 @@
       h1 {
         font-family: torch;
       }
-      .column img,
-      .column video,
-      .column iframe {
-        transition: transform 0.2s ease; /* Smooth transition for transform */
-        transform: scale(0.7);
-      }
     </style>
   </head>
   <body>
@@ -29,22 +25,30 @@
       <a href="#home" class="active">Home</a>
       <a href="#news">Works</a>
       <a href="#contact">About</a>
+      <!-- <a href="#about">About</a> -->
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
 
+    <!-- Header -->
     <div class="header">
-      <div id="title">
-        <h1>Chandni</h1>
-        <div id="descripton-container">
-          <a class="description" href="#works">
-            PHOTOGRAPHER. CINEMATOGRAPHER. DJ. DIRECTOR. ROCKSTAR. <br />
-            <span>VIEW ALL WORKS HERE</span>
-          </a>
-        </div>
+      <!-- <h1>Responsive Image Grid</h1> -->
+      <!-- <p>Resize the browser window to see the responsive effect.</p> -->
+    </div>
+
+    <!-- <div class="fisheye-overlay"> -->
+    <div id="title">
+      <h1>Chandni</h1>
+      <div id="descripton-container">
+        <a class="description" href="#works">
+          PHOTOGRAPHER. CINEMATOGRAPHER. DJ. DIRECTOR. ROCKSTAR. <br />
+          <span>VIEW ALL WORKS HERE</span></a
+        >
       </div>
     </div>
+
+    <!-- </div> -->
 
     <!-- Photo Grid -->
     <a href="#work">
@@ -336,9 +340,7 @@
     <script>
       // Function to handle mouse movement and apply parallax effect
       document.addEventListener("mousemove", function (event) {
-        const images = document.querySelectorAll(
-          ".column img, .column video,.column iframe"
-        );
+        const images = document.querySelectorAll(".column img, .column video");
         images.forEach((image) => {
           const rect = image.getBoundingClientRect();
           const imageX = rect.left + rect.width / 2;
@@ -349,8 +351,8 @@
           const deltaY = event.clientY - imageY;
 
           // Create a parallax effect by adjusting the transform property
-          const translateX = deltaX / 5; // Adjust the divisor to change effect strength
-          const translateY = deltaY / 5;
+          const translateX = deltaX / 20; // Adjust the divisor to change effect strength
+          const translateY = deltaY / 20;
 
           gsap.to(image, {
             x: translateX,
@@ -363,5 +365,7 @@
     </script>
 
     <script src="bundle2.js"></script>
+    <!-- <script src="main.js" async defer></script>
+    <script src="cursor.js"></script> -->
   </body>
 </html>

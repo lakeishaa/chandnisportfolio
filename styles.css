@@ -186,3 +186,10 @@ span:hover {
 }
 
 /* nav end */
+
+
+
+/* editss */
+.column img, .column video {
+  transition: transform 0.2s ease; /* Smooth transition for transform */
+}
