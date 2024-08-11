@@ -240,3 +240,17 @@ p {
     padding: 0 1rem 1rem 1rem;
   }
 }
+
+/* Added this new class for centering the video */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Removed inline style, ensuring the video doesn't exceed container width */
+video {
+  max-width: 100%;
+  height: auto;
+}

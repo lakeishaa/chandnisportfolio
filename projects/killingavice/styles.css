@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 * {
-  /* font-family: "Poppins", sans-serif; */
-  font-family: monospace;
+  font-family: monospace; /* Change this to "Poppins" if you want */
   background-color: black; /* Black background for the entire page */
   color: white;
+  box-sizing: border-box; /* Apply border-box to all elements */
 }
 
 /* Reset some basic styles */
@@ -16,10 +16,7 @@ p {
 }
 
 h1 {
-  /* margin-bottom: 0 !important; */
   padding: 0;
-  /* margin: 0; */
-  /* top: 1rem; */
   margin: 1rem 0 0 0 !important;
   font-weight: 600; /* Use Poppins font weight for headings */
   color: #f83b8a !important; /* Pink color for headings */
@@ -37,19 +34,12 @@ body {
 header {
   text-align: center;
   padding: 1rem 1rem 0 1rem;
-  /* font-size: 0.8rem; */
 }
 
 footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.7rem;
-  position: absolute;
-  /* bottom: 0; */
-  justify-content: center;
-  display: flex;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* Main section styling */
@@ -62,23 +52,21 @@ main {
   gap: 1rem;
 }
 
-/* Single column flayout */
+/* Single column layout */
 .one-column .container {
   grid-template-columns: 1fr;
 }
 
 .one-column .box {
   padding: 1rem;
-  /* border: 0.5px solid #bcdff0; */
-  height: auto;
-  width: auto;
+  height: auto; /* Let the height adjust based on content */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
 /* Two columns layout */
-.two-columns .container .two-columns0 {
+.two-columns .container {
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -88,7 +76,6 @@ main {
 
 .two-columns .box {
   padding: 1rem;
-  /* border: 0.5px solid #bcdff0; */
 }
 
 /* Responsive breakpoint for 2 columns */
@@ -131,15 +118,8 @@ img {
   object-fit: cover; /* Ensure the image covers the container */
 }
 
-/* .image-one {
-  height: 80vh !important;
-  width: auto !important;
-} */
-
 p {
-  /* font-family: "Courier New", Courier, monospace; */
   font-family: monospace;
-
   font-size: 1.2em;
 }
 
@@ -147,11 +127,9 @@ p {
   text-align: right;
 }
 
-/* nav here */
-
+/* Navigation styling */
 .topnav {
   overflow: hidden;
-  /* background-color: #f83b8a; */
   border: 2px dotted #f83b8a;
 }
 
@@ -163,8 +141,6 @@ p {
   padding: 6px 16px;
   text-decoration: none;
   font-size: 1em;
-  /* background-color: #f83b8a; */
-  /* border: 2px dotted #f83b8a; */
 }
 
 .topnav a:hover {
@@ -173,8 +149,6 @@ p {
 }
 
 .topnav a.active {
-  /* background-color: #04aa6d; */
-  /* color: white; */
   color: #f83b8a;
 }
 
@@ -190,9 +164,6 @@ p {
     float: right;
     display: block;
   }
-  /* main {
-    padding: 0 1rem 1rem 1rem;
-  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -211,8 +182,7 @@ p {
   }
 }
 
-/* nav end */
-
+/* Navigation link styling */
 .prevnext {
   color: white;
   text-decoration: none;
@@ -226,40 +196,23 @@ p {
 @media screen and (max-width: 900px) {
   main {
     padding: 0 1rem 1rem 1rem;
-    /* top: 50% !important;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    left: 50%;
-    right: 50%;
-    width: 100%; */
   }
-
-  /* p {
-    font-size: 1em;
-  } */
-  /* 
-  footer {
-    bottom: 0;
-  } */
 }
 
-@media screen and (max-width: 500px) {
-  /* @media screen and (max-width: 600px) { */
-  main {
-    padding: 0 1rem 1rem 1rem;
-    top: 50% !important;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    left: 50%;
-    right: 50%;
-    width: 100%;
-  }
+/* Box styling */
+.box {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto; /* Allow height to adjust based on content */
+  overflow: auto; /* Handle overflow if necessary */
+  padding: 1rem; /* Add padding if needed */
+}
 
-  p {
-    font-size: 1em;
-  }
-
-  footer {
-    bottom: 0;
-  }
+iframe {
+  /* width: 100%;
+  aspect-ratio: 16 / 9; */
+  --container-width: 720px;
+  --ratio: calc(16 / 9); /* 1.77 */
+  width: 100%;
+  height: calc(var(--container-width) / var(--ratio));
 }

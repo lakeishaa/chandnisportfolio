@@ -44,7 +44,21 @@ body {
     flex: 50%;
     max-width: 50%;
   }
+
+  .description {
+    white-space: normal;
+  }
+  a.description {
+    top: 95% !important;
+  }
 }
+/* 
+@media screen and (max-width: 900px) {
+  #title {
+    white-space: normal;
+    color: red;
+  }
+} */
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -108,6 +122,26 @@ h1 {
   font-family: monospace;
   transform: translate(-50%);
   text-align: center;
+  display: inline-block; /* or inline */
+}
+
+/* .description a {
+  color: red;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  position: fixed;
+} */
+
+.description a {
+  margin: 0;
+  padding: 0;
+}
+
+.description a:hover {
+  text-decoration: underline dotted #f83b8a;
+  color: #f83b8a;
 }
 
 span:hover {
@@ -187,9 +221,12 @@ span:hover {
 
 /* nav end */
 
-
-
 /* editss */
-.column img, .column video {
+.column img,
+.column video {
   transition: transform 0.2s ease; /* Smooth transition for transform */
+}
+
+.topnav .icon {
+  display: none;
 }

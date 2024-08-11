@@ -7,6 +7,10 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <style>
       @font-face {
@@ -26,11 +30,11 @@
   </head>
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">Works</a>
-      <a href="#contact">About</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="./work/index.html">Works</a>
+      <a href="./about/index.html">About</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" style="color: #f83b8a"></i>
       </a>
     </div>
 
@@ -38,16 +42,19 @@
       <div id="title">
         <h1>Chandni</h1>
         <div id="descripton-container">
-          <a class="description" href="#works">
+          <div class="description">
             PHOTOGRAPHER. CINEMATOGRAPHER. DJ. DIRECTOR. ROCKSTAR. <br />
-            <span>VIEW ALL WORKS HERE</span>
-          </a>
+            <a style="top: 100%" class="description" href="./work/"
+              >VIEW ALL WORKS HERE</a
+            >
+            <!-- <a href="./work/"><span>VIEW ALL WORKS HERE</span></a> -->
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Photo Grid -->
-    <a href="#work">
+    <a href="./work/index.html">
       <div class="row">
         <div class="column">
           <video
@@ -369,6 +376,14 @@
     </a>
 
     <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
       // Function to handle mouse movement and apply parallax effect
       document.addEventListener("mousemove", function (event) {
         const images = document.querySelectorAll(
