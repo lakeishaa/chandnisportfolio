@@ -26,8 +26,8 @@
     "tag": "Editorial",
     "description": "",
     "sources": [
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/raz10.png",
       "https://chandnisportfolio.s3.us-east-2.amazonaws.com/raz11.png",
+      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/raz10.png",
       "https://chandnisportfolio.s3.us-east-2.amazonaws.com/raz13.png",
       "https://chandnisportfolio.s3.us-east-2.amazonaws.com/raz14.png",
       "https://chandnisportfolio.s3.us-east-2.amazonaws.com/raz2.png",
@@ -42,11 +42,20 @@
   },
   {
     "format": "photo",
-    "title": "KidQuest x HUMANSKIES",
+    "title": "KidQuest x Humanskies",
     "date": "June 2024",
     "tag": "Street",
-    "description": "For @realityclub",
-    "sources": ["", "", ""]
+    "description": "For @kidquest24 & @human__skies",
+    "sources": [
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/DUY08986.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/DUY09224.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/DUY09356.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/DUY09436.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/DUY09599.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/DUY09384.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/DUY09264.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/DUY09486.jpg"
+    ]
   },
   {
     "format": "photo",
@@ -62,26 +71,18 @@
   },
   {
     "format": "photo",
-    "title": "Since 2017",
-    "date": "November 2023",
-    "tag": "Archives of film pictures during my high school years, reimagined to a flashcard",
-    "description": "For @realityclub",
-    "sources": ["", "", ""]
-  },
-  {
-    "format": "photo",
     "title": "Extraterrestrial Grrls Vol. II",
     "date": "May 2023",
     "tag": "Editorial",
     "description": "",
     "sources": [
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/348830398_749655740277135_2872066485197139786_n.jpg",
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/348619254_941389363737802_1144215784312257762_n.jpg",
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/348638593_730812192152918_2338045069599140300_n.jpg",
+      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/348727397_740410831173745_6923336626859660184_n.jpg",
       "https://chandnisportfolio.s3.us-east-2.amazonaws.com/348670622_124895440604858_2588611963630744670_n.jpg",
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/349119475_790923149277170_4152480687219467189_n.jpg",
       "https://chandnisportfolio.s3.us-east-2.amazonaws.com/349222173_6337979712892132_8620914871444799701_n.jpg",
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/348727397_740410831173745_6923336626859660184_n.jpg"
+      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/348619254_941389363737802_1144215784312257762_n.jpg",
+      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/349119475_790923149277170_4152480687219467189_n.jpg",
+      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/348638593_730812192152918_2338045069599140300_n.jpg",
+      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/348830398_749655740277135_2872066485197139786_n.jpg"
     ]
   },
   {
@@ -111,9 +112,9 @@
     "tag": "Portrait",
     "description": "For @kendurasi & her mom",
     "sources": [
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/DSCF1267.jpg",
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/DSCF1278.jpg",
       "https://chandnisportfolio.s3.us-east-2.amazonaws.com/DSCF1302.jpg",
+      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/DSCF1278.jpg",
+      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/DSCF1267.jpg",
       "https://chandnisportfolio.s3.us-east-2.amazonaws.com/DSCF1339.jpg"
     ]
   },
@@ -282,5 +283,106 @@
     "title": "A MESS",
     "date": "April 2021",
     "tag": "Portrait"
+  },
+  {
+    "format": "photo",
+    "title": "FP NYC",
+    "date": "October - November 2023",
+    "tag": "Street",
+    "description": "From the river to the sea.",
+    "sources": [
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/IMG_5181.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/DSCF1883+2.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/IMG_5180.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/IMG_5182.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/DSCF2030+copy+2.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/DSCF1991+2.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/DSCF1930+2.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/DSCF2030+copy+2.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/DSCF1731-2+2.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/drive-download-20241106T213457Z-001/DSCF1952+2.jpg"
+    ]
+  },
+  {
+    "format": "photo",
+    "title": "Since 2017",
+    "date": "November 2023",
+    "tag": "Street",
+    "description": "Archives of film pictures during my high school years, reimagined to a flashcard",
+    "sources": [
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/Untitled-1+2.PNG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/Untitled-2.PNG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/Untitled-3.PNG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/Untitled-4.PNG"
+    ]
+  },
+  {
+    "format": "photo",
+    "title": "Extraterrestrial Grrls Vol. IV",
+    "date": "December 2023",
+    "tag": "Editorial",
+    "description": "Good evening, New York! We have a bizarre story unfolding in the Lower East Side. Residents are abuzz as Alex, a humanoid alien from the mysterious Extraterrestrial Girls genus, crash-landed here today and is casually walking around the neighborhood.",
+    "sources": [
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/S632094-R1-011-4.tif",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/S632094-R1-019-8.tif",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/S632094-R1-031-14.tif",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/S632094-R2-009-3.tif"
+    ]
+  },
+  {
+    "format": "graphics",
+    "title": "SSPEL",
+    "date": "Ongoing",
+    "tag": "Design",
+    "description": "Graphic designer for DJ Collective SSPEL based in Los Angeles",
+    "sources": [
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/bhjknjk.PNG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/cfjgvykubhlij.JPG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/Sequence+01.mp4",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/dressspooky.PNG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/Untitled+design+(3).mp4"
+    ]
+  },
+  {
+    "format": "graphics",
+    "title": "SAH! poster",
+    "date": "August 2024",
+    "tag": "Design",
+    "description": "Graphic designer for DJ Collective SSPEL based in Los Angeles",
+    "sources": [""]
+  },
+  {
+    "format": "graphics",
+    "title": "CAZ for @carolynwilke",
+    "date": "May 2024",
+    "tag": "Design",
+    "description": "Graphic designer for DJ CAZ"
+  },
+  {
+    "format": "graphics",
+    "title": "1602",
+    "date": "April 2022",
+    "tag": "Photo & Design",
+    "description": " ",
+    "sources": [
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/1.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/B94E0DC5E73C557666C965BEBA1128BB_video_dashinit.mp4",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/An-JhB2grWwwW03e4bjymosZxl8U5U6S0ZkLQJC3Rr1o3vsmc6SUtgELWeRtyfcPRtcrTyagDxqvywK6Xc41cRbs.mp4",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/279187257_1115324812584021_7655794863390470715_n.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/279108345_3679310445541575_1324531784135388431_n.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/278995165_955625671809077_6532136005259375399_n.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/278953920_722748305428011_8020756306212469592_n.jpg"
+    ]
+  },
+  {
+    "format": "graphics",
+    "title": "Omnibus Law",
+    "date": "October 2022",
+    "tag": "Design",
+    "description": " ",
+    "sources": [
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/121079146_657801191831952_8048879411760463660_n.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/121112171_1491998447855366_6521857860471195610_n.jpg"
+    ]
   }
 ]

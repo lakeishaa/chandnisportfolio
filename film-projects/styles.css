@@ -1,0 +1,219 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: monospace; /* Change this to "Poppins" if you want */
+  background-color: black; /* Black background for the entire page */
+  color: white;
+  box-sizing: border-box; /* Apply border-box to all elements */
+}
+
+/* Reset some basic styles */
+p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0 !important;
+}
+
+h1 {
+  padding: 0;
+  margin: 1rem 0 0 0 !important;
+  font-weight: 600; /* Use Poppins font weight for headings */
+  color: #f83b8a !important; /* Pink color for headings */
+  position: relative;
+}
+
+body {
+  line-height: 1.6;
+  background-color: black !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Footer styling */
+header {
+  text-align: center;
+  padding: 1rem 1rem 0 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+
+/* Main section styling */
+main {
+  padding: 0 14rem 1rem 14rem;
+}
+
+.container {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Single column layout */
+.one-column .container {
+  grid-template-columns: 1fr;
+}
+
+.one-column .box {
+  padding: 1rem;
+  height: auto; /* Let the height adjust based on content */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Two columns layout */
+.two-columns .container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.two-columns-text .container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.two-columns .box {
+  padding: 1rem;
+}
+
+/* Responsive breakpoint for 2 columns */
+@media (min-width: 600px) {
+  .two-columns .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .two-columns-text .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Three columns layout */
+.three-columns .container {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.three-columns .box {
+  padding: 0.3rem;
+  border: 2px dotted #f83b8a;
+  text-align: center;
+}
+
+/* Responsive breakpoint for 3 columns */
+@media (min-width: 900px) {
+  .three-columns .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .two-columns-text .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+img {
+  width: 100%; /* Ensure the image stretches to fit the container width */
+  height: 500px; /* Maintain the aspect ratio */
+  display: block; /* Remove extra space below the image */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+p {
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+#second-column {
+  text-align: right;
+}
+
+/* Navigation styling */
+.topnav {
+  overflow: hidden;
+  border: 2px dotted #f83b8a;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f83b8a;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.topnav a:hover {
+  color: white;
+  text-decoration: underline dotted white;
+}
+
+.topnav a.active {
+  color: #f83b8a;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Navigation link styling */
+.prevnext {
+  color: white;
+  text-decoration: none;
+}
+
+.prevnext:hover {
+  color: #f83b8a;
+  text-decoration: underline dotted #f83b8a;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 0 1rem 1rem 1rem;
+  }
+}
+
+/* Box styling */
+.box {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto; /* Allow height to adjust based on content */
+  overflow: auto; /* Handle overflow if necessary */
+  padding: 1rem; /* Add padding if needed */
+}
+
+iframe {
+  /* width: 100%;
+  aspect-ratio: 16 / 9; */
+  --container-width: 720px;
+  --ratio: calc(16 / 9); /* 1.77 */
+  width: 100%;
+  /* height: 1000px; */
+  height: calc(var(--container-width) / var(--ratio));
+}
