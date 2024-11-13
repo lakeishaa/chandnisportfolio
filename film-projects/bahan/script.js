@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const targetTitle = "Bahan (16mm)"; // Change this to match the desired title
 
   // Fetch the JSON data from an external file
-  fetch("chandnisportfolio/film.JSON")
+  fetch("../../film.JSON")
     .then((response) => response.json()) // Parse the JSON from the response
     .then((jsonData) => {
       // Find the specific entry where the title matches the targetTitle
