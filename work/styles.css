@@ -140,6 +140,12 @@ body .container {
 .card {
   --bs-card-bg: none !important;
 }
+/* 
+.card.p-0:hover,
+p.card-text:hover,
+p.card-title:hover {
+  background-color: #f83b8a;
+} */
 
 /* nav here */
 
