@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Define the title you want to match in the JSON
-  const targetTitle = "Killing A Vice"; // Change this to match the desired title
+  const targetTitle = "Bahan (16mm)"; // Change this to match the desired title
 
   // Fetch the JSON data from an external file
   fetch("/chandnisportfolio/film.json")
