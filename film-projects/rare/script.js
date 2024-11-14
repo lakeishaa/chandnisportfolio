@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const targetTitle = "Rare Dir. Veronica Mojica (ROUGH CUT)"; // Change this to match the desired title
 
   // Fetch the JSON data from an external file
-  fetch("/chandnisportfolio/film.json")
+  fetch("../../film.json")
     .then((response) => response.json()) // Parse the JSON from the response
     .then((jsonData) => {
       // Find the specific entry where the title matches the targetTitle
