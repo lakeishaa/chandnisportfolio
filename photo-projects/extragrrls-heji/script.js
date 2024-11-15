@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Fetch the JSON data from an external file
-  fetch("/../photo.json")
+  fetch("../../photo.json")
     .then((response) => response.json()) // Parse the JSON from the response
     .then((jsonData) => {
       const content = jsonData[0]; // Assuming there's only one entry in the array for now

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Load the JSON file
-  fetch("/../photo.json")
+  fetch("../../photo.json")
     .then((response) => response.json())
     .then((data) => {
       // Find the specific entry by title

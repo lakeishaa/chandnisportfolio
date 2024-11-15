@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Fetch the JSON data from an external file
-  fetch("/../photo.json")
+  fetch("../../photo.json")
     .then((response) => response.json()) // Parse the JSON from the response
     .then((jsonData) => {
       // Find the specific entry where the title matches "Kost: Lakeisha's Room"
-      const content = jsonData.find((item) => item.title === "CAZ for @carolynwilke");
+      const content = jsonData.find(
+        (item) => item.title === "CAZ for @carolynwilke"
+      );
 
       if (content) {
         // Updating the title, date, tag, and description
