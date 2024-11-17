@@ -13,6 +13,19 @@ p {
   margin: 0;
   padding: 0;
   margin-bottom: 0 !important;
+  text-align: center;
+}
+
+p a {
+  color: white;
+  text-align: center;
+  text-decoration: underline dotted white;
+}
+
+p a:hover {
+  color: #f83b8a;
+  text-align: center;
+  text-decoration: underline dotted #f83b8a;
 }
 
 h1 {
@@ -261,4 +274,3 @@ a:active {
 .container:hover {
   color: #f83b8a !important;
 }
-

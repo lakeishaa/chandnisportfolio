@@ -22,24 +22,3 @@ const filterCards = (e) => {
 filterButtons.forEach((button) =>
   button.addEventListener("click", filterCards)
 );
-
-// Set active filter based on URL parameter
-const urlParams = new URLSearchParams(window.location.search);
-const category = urlParams.get("category");
-
-if (category) {
-  const activeButton = document.querySelector(
-    `button[data-filter="${category}"]`
-  );
-  if (activeButton) {
-    activeButton.classList.add("active");
-    filterCards({ target: activeButton });
-  }
-} else {
-  // Set "all" as active if no category is specified
-  const allButton = document.querySelector('button[data-filter="all"]');
-  if (allButton) {
-    allButton.classList.add("active");
-    filterCards({ target: allButton });
-  }
-}

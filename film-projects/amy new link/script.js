@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Define the title you want to match in the JSON
-  const targetTitle = "STARLITE Art Collective"; // Change this to match the desired title
+  // First part: Fetch the JSON data and update the page based on title
+  const targetTitle = "Amy"; // Change this to match the desired title
 
   // Fetch the JSON data from an external file
-  fetch("../../music-and-live.json")
+  fetch("../../film.json")
     .then((response) => response.json()) // Parse the JSON from the response
     .then((jsonData) => {
       // Find the specific entry where the title matches the targetTitle
@@ -35,4 +35,22 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
     .catch((error) => console.error("Error loading JSON:", error));
+
+  // Second part: Update the "All" and "Category" links dynamically
+  const category = "film"; // Adjust this depending on the page (e.g., "photo", "music", etc.)
+
+  // Get the All link and update it based on the category
+  const allWorksLink = document.getElementById("all-works-link");
+  const categoryLink = document.getElementById("category-link");
+
+  // Set the href for the "All" works link based on the category
+  allWorksLink.href = `../../work/index.html?category=${category}`;
+
+  // Optionally, change the link text for the category
+  categoryLink.textContent = `${
+    category.charAt(0).toUpperCase() + category.slice(1)
+  } Works`;
+
+  // Update the category link to point to the correct page for that category
+  categoryLink.href = `../../work/${category}-index.html`;
 });

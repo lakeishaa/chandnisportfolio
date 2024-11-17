@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
           video.setAttribute("muted", "");
           video.setAttribute("loop", "");
           video.setAttribute("playsinline", "");
-          video.style.width = "94%";
-          video.style.height = "auto";
+          video.style.width = "100%";
+          video.style.height = "100%";
           video.controls = true;
 
           const sourceElement = document.createElement("source");
