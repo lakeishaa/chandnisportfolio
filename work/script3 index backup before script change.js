@@ -4,9 +4,7 @@ const filterableCards = document.querySelectorAll("#filterable-cards .card");
 
 // Function to filter cards based on filter buttons
 const filterCards = (e) => {
-  const activeButton = document.querySelector("#filter-buttons .active");
-  if (activeButton) activeButton.classList.remove("active");
-
+  document.querySelector("#filter-buttons .active").classList.remove("active");
   e.target.classList.add("active");
 
   filterableCards.forEach((card) => {
@@ -15,10 +13,9 @@ const filterCards = (e) => {
       card.dataset.name === e.target.dataset.filter ||
       e.target.dataset.filter === "all"
     ) {
-      card.classList.replace("hide", "show");
-    } else {
-      card.classList.add("hide");
+      return card.classList.replace("hide", "show");
     }
+    card.classList.add("hide");
   });
 };
 
@@ -29,8 +26,6 @@ filterButtons.forEach((button) =>
 // Set active filter based on URL parameter
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
-
-console.log(`Category from URL: ${category}`); // Debugging
 
 if (category) {
   const activeButton = document.querySelector(
