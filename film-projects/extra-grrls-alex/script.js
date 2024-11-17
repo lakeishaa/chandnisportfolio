@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Define the title you want to match in the JSON
-  const targetTitle = "Extraterrestrial Grrls Vol. 4"; // Change this to match the desired title
+  const targetTitle = "Extraterrestrial Grrls Vol. IV"; // Change this to match the desired title
 
   // Fetch the JSON data from an external file
   fetch("../../film.json")

@@ -248,7 +248,12 @@ p#menu-icon {
 #category {
   text-align: center;
   border: 2px dotted #f83b8a;
-  padding: 0.3rem;
+}
+p.category:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #f83b8a;
+  text-decoration: underline dotted black;
 }
 
 @media screen and (max-width: 900px) {
@@ -265,7 +270,6 @@ a:visited {
 }
 a:hover {
   text-decoration: none;
-  color: #f83b8a;
 }
 a:active {
   text-decoration: none;
