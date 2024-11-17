@@ -260,7 +260,10 @@
     "tag": "Graphics",
     "description": "",
     "role": "",
-    "sources": [""]
+    "sources": [
+      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/Whats+Love.mp4"
+    ],
+    "autoplay": true
   },
   {
     "format": "film",
