@@ -33,7 +33,7 @@
     "tag": "Commercial",
     "description": "Shot and directed for @realityclub.",
     "role": "Director & editor",
-    "sources": ["https://www.instagram.com/p/C7B4ABqveh2/"]
+    "sources": [""]
   },
   {
     "format": "film",
@@ -42,15 +42,15 @@
     "tag": "Experimental Film",
     "description": "Shot on Bolex in 16mm. Portrait of Chandni's room (unedited).",
     "role": "Director & editor",
-    "sources": ["https://www.youtube.com/embed/w8XDzySpG-A?autoplay=1"]
+    "sources": ["https://www.yo utube.com/embed/w8XDzySpG-A?autoplay=1"]
   },
   {
     "format": "film",
     "title": "Serious People Dir. Imaji Fabiandava",
     "date": "February 2024",
     "tag": "Short Film",
-    "description": "Cinematography. Directed by Imaji Fabiandava.",
-    "role": "Director & editor",
+    "description": "Directed by Imaji Fabiandava.",
+    "role": "Cinematography",
     "sources": ["https://www.youtube.com/embed/cFRJv2xdyMo?autoplay=1"]
   },
   {
@@ -215,7 +215,7 @@
     "tag": "Experimental Film",
     "description": "",
     "role": "Director & editor.",
-    "sources": ["https://youtube.com/shorts/Cy4ceb21rWM?autoplay=1"]
+    "sources": ["https://www.youtube.com/embed/Cy4ceb21rWM"]
   },
   {
     "format": "film",
