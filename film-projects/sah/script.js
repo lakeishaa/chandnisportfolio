@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.json()) // Parse the JSON from the response
     .then((jsonData) => {
       // Find the specific entry where the title matches "Kost: Lakeisha's Room"
-      const content = jsonData.find((item) => item.title === "I DO! (SAH!)");
+      const content = jsonData.find((item) => item.title === "I DO! (SAH !)");
 
       if (content) {
         // Updating the title, date, tag, and description
