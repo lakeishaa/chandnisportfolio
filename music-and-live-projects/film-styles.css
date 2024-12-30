@@ -133,6 +133,9 @@ p {
 .topnav {
   overflow: hidden;
   border: 2px dotted #f83b8a;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .topnav a {
