@@ -16,6 +16,20 @@ p {
   text-align: center;
 }
 
+a.link {
+  font-family: monospace;
+  font-size: 1.2em;
+  color: white;
+  /* text-decoration: underline dotted #f83b8a; */
+  text-decoration: none;
+  
+}
+
+a.link:hover {
+  color: #f83b8a;
+  text-decoration: underline dotted #f83b8a;
+}
+
 span {
   color: #f83b8a;
   text-decoration: underline dotted #f83b8a;
