@@ -9,7 +9,6 @@ body {
   background: black !important;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .row > * {
@@ -30,13 +29,14 @@ body .container {
 }
 
 .column {
-  height: 77vh !important;
+  height: 95vh !important;
   display: flex;
   flex: 1; /* Allow columns to grow equally */
+
   /* flex-direction: column; */
   margin-right: 10px; /* Space between columns */
   box-sizing: border-box;
-  /* height: 95vh; */
+  height: 85vh;
   overflow: hidden; /* Hide overflow initially */
   /* background-color: red; */
 }
@@ -284,8 +284,3 @@ footer {
   padding: 1rem;
   font-size: 0.7rem;
 }
-
-.footer-text {
-  color: white;
-}
-

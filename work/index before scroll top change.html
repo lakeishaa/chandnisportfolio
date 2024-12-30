@@ -1081,13 +1081,13 @@
                 scrollInterval = setInterval(() => {
                   insideDiv.scrollTop += 1; // Scroll down by 1 pixel
                   // If at the bottom, reset to the top
-                  // if (
-                  //   insideDiv.scrollTop >=
-                  //   insideDiv.scrollHeight - insideDiv.clientHeight
-                  // ) {
-                  //   insideDiv.scrollTop = 0;
-                  // }
-                }, 15); // Adjust the speed by changing the interval time
+                  if (
+                    insideDiv.scrollTop >=
+                    insideDiv.scrollHeight - insideDiv.clientHeight
+                  ) {
+                    insideDiv.scrollTop = 0;
+                  }
+                }, 5); // Adjust the speed by changing the interval time
               };
 
               const stopScrolling = () => {
