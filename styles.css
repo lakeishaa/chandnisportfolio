@@ -69,12 +69,12 @@ body {
   }
 
   h1 {
-    font-size: 7rem !important;
+    font-size: 5rem !important;
     top: 30% !important;
   }
 
   .description {
-    top: 42% !important;
+    top: 39% !important;
   }
 }
 
@@ -203,7 +203,7 @@ span:hover {
   }
 
   .description {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     font-size: 1.3rem;
   }
 }
