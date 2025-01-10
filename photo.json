@@ -392,6 +392,19 @@
   },
   {
     "format": "graphics",
+    "title": "Arisan LA",
+    "date": "December 2024",
+    "tag": "DJ",
+    "description": "A unique collaboration with the Vancouver-based Indonesian DJ collective, ARISAN (@arisanvancouver) and @indonesiancreativecollective in Los Angeles of all Indonesian DJs.",
+    "sources": [
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/arisan1.JPG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/arisan2.JPG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/arisan3.JPG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/arisan4.JPG"
+    ]
+  },
+  {
+    "format": "graphics",
     "title": "Omnibus Law",
     "date": "October 2022",
     "tag": "Design",
