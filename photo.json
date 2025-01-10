@@ -59,18 +59,6 @@
   },
   {
     "format": "photo",
-    "title": "Extraterrestrial Grrls Vol. IV",
-    "date": "December 2023",
-    "tag": "Editorial",
-    "description": "",
-    "sources": [
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/CHANGE.png",
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/CHANGE.png",
-      "https://chandnisportfolio.s3.us-east-2.amazonaws.com/CHANGE.png"
-    ]
-  },
-  {
-    "format": "photo",
     "title": "Extraterrestrial Grrls Vol. II",
     "date": "May 2023",
     "tag": "Editorial",
@@ -241,6 +229,18 @@
   },
   {
     "format": "photo",
+    "title": "Reality Club @ Williamsburg, Brooklyn",
+    "date": "March 2024",
+    "tag": "Editorial",
+    "description": "For @realityclub",
+    "sources": [
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/realityclub1.jpg",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/realityclub2.JPG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/realityclub3.JPG"
+    ]
+  },
+  {
+    "format": "photo",
     "title": "AS in Canal Street",
     "date": "December 2021",
     "tag": "Portrait",
@@ -323,10 +323,10 @@
     "tag": "Editorial",
     "description": "Good evening, New York! We have a bizarre story unfolding in the Lower East Side. Residents are abuzz as Alex, a humanoid alien from the mysterious Extraterrestrial Girls genus, crash-landed here today and is casually walking around the neighborhood.",
     "sources": [
-      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/S632094-R1-011-4.tif",
-      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/S632094-R1-019-8.tif",
-      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/S632094-R1-031-14.tif",
-      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/S632094-R2-009-3.tif"
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/alex1.png",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/alex2.png",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/alex3.png",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/alex4.png"
     ]
   },
   {
@@ -340,6 +340,7 @@
       "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/cfjgvykubhlij.JPG",
       "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/Sequence+01.mp4",
       "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/dressspooky.PNG",
+      "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/SENSORYCONTROL.mp4",
       "https://chandnisportfolio2.s3.us-east-2.amazonaws.com/Untitled+design+(3).mp4"
     ]
   },
