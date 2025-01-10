@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Define the title you want to match in the JSON
-  const targetTitle = "Killing A Vice Dir. Eduardo Machado"; // Change this to match the desired title
+  const targetTitle = "Arisan LA"; // Change this to match the desired title
 
   // Fetch the JSON data from an external file
-  fetch("../../film.json")
+  fetch("../../music-and-live.json")
     .then((response) => response.json()) // Parse the JSON from the response
     .then((jsonData) => {
       // Find the specific entry where the title matches the targetTitle
@@ -19,11 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
           ".three-columns .container .box:nth-child(1) p"
         ).textContent = content.date;
         document.querySelector(
-          ".three-columns .container .box:nth-child(3) p"
-        ).textContent = content.tag;
-        document.querySelector(
           ".three-columns .container .box:nth-child(2) p"
-        ).textContent = content.role;
+        ).textContent = content.tag;
 
         // Set up the iframe video source
         const iframe = document.querySelector("iframe");

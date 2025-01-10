@@ -4,7 +4,7 @@
     "title": "DIALECTIVE 2024 Runway Show",
     "date": "May 2024",
     "tag": "DJ",
-    "description": "2024 DIALECTIVE Thesis Runway Showcase for Parsons School of Design Fashion students. Sound Designer - Andrew Sachs @andrewsachs",
+    "description": "DJ for 2024 DIALECTIVE Thesis Runway Showcase for Parsons School of Design Fashion students. Sound Designer - Andrew Sachs @andrewsachs",
     "sources": [""]
   },
   {
@@ -12,7 +12,7 @@
     "title": "STARLITE Art Collective",
     "date": "February 2024",
     "tag": "DJ",
-    "description": "Pop up art market DREAMLAND with 20+ vendors selling y2k, vintage, Sanrio, coquette, clay charms, tooth gems, tattoos, crystals n more @starlite.collective",
+    "description": "DJ for pop up art market DREAMLAND with 20+ vendors selling y2k, vintage, Sanrio, coquette, clay charms, tooth gems, tattoos, crystals n more @starlite.collective",
     "sources": [
       "https://chandnisportfolio.s3.us-east-2.amazonaws.com/starlite.mp4"
     ]
@@ -22,14 +22,22 @@
     "title": "StrudelRPL Live Coding",
     "date": "November 2023",
     "tag": "Live coding",
-    "description": "",
+    "description": "Experimental coding, done in real time, live",
     "sources": ["https://www.youtube.com/embed/96cMWERykbk?autoplay=1"]
+  },
+  {
+    "format": "graphics",
+    "title": "Arisan LA",
+    "date": "December 2024",
+    "tag": "DJ",
+    "description": "A unique collaboration with the Vancouver-based Indonesian DJ collective, ARISAN (@arisanvancouver) and @indonesiancreativecollective in Los Angeles of all Indonesian DJs.",
+    "sources": ["https://www.youtube.com/embed/Igvf3KIH6z0?autoplay=1"]
   },
   {
     "format": "graphics",
     "title": "Hydra.ojack Live Coding",
     "date": "November 2023",
-    "tag": "Live coding",
+    "tag": "Experimental coding, done in real time, live",
     "description": "",
     "sources": ["https://www.youtube.com/embed/1bz-YNwS9Do?autoplay=1"]
   }
