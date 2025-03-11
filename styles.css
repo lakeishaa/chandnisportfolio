@@ -77,6 +77,7 @@ body {
 
   .description {
     top: 44% !important;
+    padding-top: 10px;
   }
 }
 
